@@ -1,0 +1,26 @@
+#+TITLE: ((((((((((Keyboard_Switcher.sh))))))))))
+
+*** Description
+ I have two keyboards, do you? Well TBH not exactly two keyboards but
+ rather I have one internal keyboard on my laptop and little hhkb that
+ I carry around with me wherever I may go. Up until recently I have
+ manual switched between the internal and external keyboard configs
+ everytime I decide I want to use my external while on my laptop, also
+ the hhkb is small enough to cover the keys on a macbook 15" as if it
+ was design to do so. The issue I had was that when I placed my hhkb
+ on the keyboard in my macbook I had the issue of keys being triggered
+ at random intervals depending on how hard I was typing. Now disabling
+ the internal keyboard manual is an option, but unfortunately I ran
+ into a snag everytime I forgot my internal keyboard was disabled and
+ decided to switch back to it after using my external. To solve my
+ headache and subsequent butt hurt - I wrote this little script, which
+ checks to see if my external keyboard is plugged in, if it's not,
+ then the internal keyboard gets enabled and keybindings set, if the
+ external is connected then the internal keyboard gets disabled, and
+ different hhkb specific keybindings get set.
+
+*** Command line tools I used
+- xinput: http://sourceforge.net/projects/xinput/
+- lsusb:  http://mj.ucw.cz/sw/pciutils/
+- xkb:    (optional)
+- xcape:  (optional)
